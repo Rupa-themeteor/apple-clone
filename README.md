@@ -29,7 +29,7 @@ This project features a clean, modern UI inspired by Apple’s iconic design, wi
 
 1. Clone this repository  
 ```bash
-rupa-themeteor.github.io///github.com/yourusername/apple-clone.git
+rupa-themeteor.github.io//apple-clone.git
 Open index.html or any product page in your browser
 
 🤝 Contributing
