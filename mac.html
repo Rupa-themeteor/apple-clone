@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>Apple</title>
+  <link rel="icon" href="img/apple icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-white antialiased">
+
+  <!-- Reuse same header from index.html (copy/paste) -->
+  <!-- NAV (same as index.html) -->
+  <header id="site-header" class="fixed w-full z-50 top-0">
+    <div class="backdrop-blur bg-black/60 border-b border-black/30">
+      <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+        <a href="index.html">
+      <img src="img/apple icon.png" alt="Apple Logo" class="w-6 h-6">
+    </a>
+
+        <nav class="hidden md:flex gap-6 items-center text-sm">
+          <a href="mac.html" class="py-2 text-sky-400 font-semibold">Mac</a>
+          <a href="ipad.html" class="py-2">iPad</a>
+          <a href="iphone.html" class="py-2">iPhone</a>
+          <a href="watch.html" class="py-2">Watch</a>
+        </nav>
+        <div class="flex items-center gap-4">
+         <button id="searchBtn" class="hidden md:inline px-2 py-1 rounded hover:bg-white/5"><img src="img/search.png" class="h-5 w-auto" /></button>
+          <a href="#" class="px-3 py-1 rounded hover:bg-white/5 inline-block">
+  <img src="img/bag.png" alt="Bag Icon" class="h-5 w-auto" />
+</a>
+          <button id="mobileToggle" class="md:hidden px-2 py-1">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section class="relative h-96 bg-cover bg-center" style="background-image: url('img/mac.jpeg')">
+      <div class="absolute inset-0 bg-black/30 flex items-center">
+        <div class="max-w-7xl mx-auto px-6">
+          <h1 class="text-4xl md:text-6xl font-bold">Mac</h1>
+          <p class="text-neutral-300 mt-2">Explore MacBook Air, MacBook Pro, iMac and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product grid -->
+    <section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+      <article class=" group overflow-hidden rounded-2xl overflow-hidden bg-neutral-800 p-4 transition hover:shadow-lg">
+        <img src="img/macbook pro.jpeg" alt="" class="w-full h-48 object-cover rounded-lg  transition-transform group-hover:scale-105"/>
+        <h3 class="mt-4 font-semibold text-xl">MacBook Pro</h3>
+        <p class="text-neutral-400 mt-2">M3 Pro — for pros who create.</p>
+        <div class="mt-4"><a class="underline" href="#">Learn more</a></div>
+      </article>
+      <article class=" group overflow-hidden rounded-2xl overflow-hidden bg-neutral-800 p-4 transition hover:shadow-lg">
+        <img src="img/macbook.jpeg" alt="" class="w-full h-48 object-cover rounded-lg  transition-transform group-hover:scale-105"/>
+        <h3 class="mt-4 font-semibold text-xl">MacBook Air</h3>
+        <p class="text-neutral-400 mt-2">Thin. Light. Powerful.</p>
+        <div class="mt-4"><a class="underline" href="#">Buy</a></div>
+      </article>
+      <article class=" group overflow-hidden rounded-2xl overflow-hidden bg-neutral-800 p-4 transition hover:shadow-lg">
+        <img src="img/imac.jpg" alt="" class="w-full h-48 object-cover rounded-lg  transition-transform group-hover:scale-105"/>
+        <h3 class="mt-4 font-semibold text-xl">iMac</h3>
+        <p class="text-neutral-400 mt-2">Vibrant colors and performance.</p>
+        <div class="mt-4"><a class="underline" href="#">Learn more</a></div>
+      </article>
+    </section>
+  </main>
+
+ <!-- ACTUAL FOOTER -->
+<footer class="bg-neutral-950 text-neutral-400 border-t border-neutral-800">
+  <div class="max-w-7xl mx-auto px-6 py-12 space-y-8">
+    
+    <!-- Footer Top Links -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Column 1 -->
+      <div>
+        <p class="text-sm font-semibold text-white mb-2">Shop and Learn</p>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="hover:underline">Mac</a></li>
+          <li><a href="#" class="hover:underline">iPad</a></li>
+          <li><a href="#" class="hover:underline">iPhone</a></li>
+          <li><a href="#" class="hover:underline">Watch</a></li>
+          <li><a href="#" class="hover:underline">AirPods</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <p class="text-sm font-semibold text-white mb-2">Services</p>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="hover:underline">Apple Music</a></li>
+          <li><a href="#" class="hover:underline">Apple TV+</a></li>
+          <li><a href="#" class="hover:underline">AppleCare</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <p class="text-sm font-semibold text-white mb-2">About</p>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="hover:underline">Newsroom</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Environment</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-neutral-800 pt-6 text-sm text-center">
+      <p>© 2025 Apple Clone. Not affiliated with Apple Inc.</p>
+      <p class="mt-2">
+        <a href="#" class="hover:underline">Privacy</a> |
+        <a href="#" class="hover:underline">Terms of Use</a> |
+        <a href="#" class="hover:underline">Sales and Refunds</a> |
+        <a href="#" class="hover:underline">Legal</a> |
+        <a href="#" class="hover:underline">Site Map</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
